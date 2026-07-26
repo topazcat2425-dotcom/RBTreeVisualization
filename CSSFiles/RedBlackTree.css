@@ -1,0 +1,49 @@
+/*
+I'm kidding, theres just one css file. None of the fading is used, idk if it works
+*/
+
+/* class to fade out */
+.fade-out {
+    animation: fade reverse forwards 1s;
+}
+
+/* class to fade in */
+.fade-in {
+    animation: fade forwards 1s;
+}
+
+/* animation for fading */
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+/* class that makes the element shiver in fear */
+.shiver {
+    animation: afraid .5s;
+    animation-iteration-count: infinite;
+}
+
+/* animation for shivering... in fear! */
+@keyframes afraid {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    33% {
+        transform: rotate(15deg);
+    }
+
+    66% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-15deg);
+    }
+}
